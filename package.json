@@ -1,0 +1,35 @@
+{
+  "name": "youtube-educational-analyzer",
+  "version": "1.0.0",
+  "description": "Educational YouTube video analyzer with paragraph generation and image extraction",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0",
+    "youtube-transcript": "^1.0.6",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "openai": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "fs-extra": "^11.1.1",
+    "sharp": "^0.32.5",
+    "youtube-dl-exec": "^2.4.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
